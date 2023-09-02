@@ -85,6 +85,7 @@
     "@types/jquery": "3.2.0",
     "@types/node": "7.0.8",
     "@types/nvd3": "^1.8.39",
+    "angular-cli-ghpages": "^1.0.6",
     "codelyzer": "3.0.1",
     "jasmine-core": "2.6.3",
     "jasmine-spec-reporter": "4.1.0",

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gene App</title>
+  <base href="https://AnbuKnight.github.io/GeneApp/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=Intl.~locale.en"></script>
+<link rel="stylesheet" href="styles.9cc6ab2710e10914480d.css"></head>
+<body>
+  <gene-app>
+<div class="spinner"></div></gene-app>
+
+<script type="text/javascript">
+    (function (window) {
+      // Polyfills DOM4 MouseEvent only on IE11
+      // Fixes ngx-charts line-chart hover
+      // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent#Polyfill
+      if (!!window.MSInputMethodContext && !!document.documentMode || document.documentMode === 10) {
+        function MouseEvent(eventType, params) {
+          params = params || { bubbles: false, cancelable: false };
+          var mouseEvent = document.createEvent('MouseEvent');
+          mouseEvent.initMouseEvent(eventType, params.bubbles, params.cancelable, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+          return mouseEvent;
+        }
+        MouseEvent.prototype = Event.prototype;
+        window.MouseEvent = MouseEvent;
+      }
+    })(window);
+
+    if (global === undefined) {
+      var global = window;
+    }
+  </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.de05aeccb189b8eb413e.js"></script><script type="text/javascript" src="scripts.6785248735cc204b93c6.js"></script><script type="text/javascript" src="main.f6ba24795a931deafc4e.js"></script></body>
+</html>
